@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: n8n-voiceover
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        sync: false
+      - key: N8N_BASIC_AUTH_PASSWORD
+        sync: false
+      - key: N8N_HOST
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
+      - key: N8N_PROTOCOL
+        value: https
+      - key: NODE_ENV
+        value: production
+      - key: EXECUTIONS_MODE
+        value: regular
+      - key: N8N_PORT
+        value: 10000
