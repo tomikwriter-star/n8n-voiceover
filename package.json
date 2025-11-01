@@ -1,0 +1,15 @@
+{
+  "name": "n8n-elevenlabs-render",
+  "version": "1.0.0",
+  "description": "N8N with ElevenLabs on Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "n8n start"
+  },
+  "dependencies": {
+    "n8n": "^1.15.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
